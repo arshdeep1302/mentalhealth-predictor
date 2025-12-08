@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress History</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f4f8;
+        }
+        h2 {
+            color: #333;
+        }
+        .chart-container {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>{{ session['user'] }}'s Stress History</h2>
+    <div class="chart-container">
+        <canvas id="stressChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('stressChart').getContext('2d');
+        const stressChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: {{ dates | safe }},
+                datasets: [{
+                    label: 'Stress Level (0 - 10)',
+                    data: {{ stress_levels | safe }},
+                    fill: false,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 10
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

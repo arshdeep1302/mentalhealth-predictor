@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-labelledby="titleDesc">
+  <title id="titleDesc">Mental health illustration</title>
+  <defs>
+    <linearGradient id="grad1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6dd3f1"/>
+      <stop offset="1" stop-color="#2e86c1"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd3a5"/>
+      <stop offset="1" stop-color="#ff7b7b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background blobs -->
+  <g opacity="0.95">
+    <ellipse cx="520" cy="160" rx="260" ry="160" fill="url(#grad1)" transform="rotate(-20 520 160)" />
+    <ellipse cx="210" cy="440" rx="220" ry="140" fill="url(#grad2)" transform="rotate(10 210 440)" />
+  </g>
+
+  <!-- person simplified -->
+  <g transform="translate(180,130)">
+    <circle cx="220" cy="110" r="70" fill="#fff" opacity="0.95"/>
+    <path d="M160 230 q80 -90 160 0" fill="#ffffff" stroke="#ffffff" stroke-width="1" opacity="0.95"/>
+    <circle cx="205" cy="95" r="8" fill="#2e86c1"/>
+    <circle cx="235" cy="95" r="8" fill="#2e86c1"/>
+    <path d="M205 135 q30 20 55 0" stroke="#2e86c1" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- floating hearts / icons -->
+  <g>
+    <path d="M110 60 q20 -30 60 -10 q40 20 10 60 q-30 40 -70 10 q-20 -20 -0 -60z" fill="#fff" opacity="0.12"/>
+    <path d="M680 520 q-20 -25 -50 -8 q-30 18 -10 50 q20 30 56 10 q14 -10 4 -52z" fill="#fff" opacity="0.10"/>
+  </g>
+</svg>

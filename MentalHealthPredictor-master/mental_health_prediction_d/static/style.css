@@ -1,0 +1,126 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eaf6f9;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navbar / Header */
+.navbar {
+    background: #2e86c1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.container h2 {
+    color: #2e86c1;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #2e86c1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background-color: #21618c;
+}
+
+/* Form Fields */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Lists */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Cards / Results */
+.card {
+    background-color: #d6efff;
+    border-left: 6px solid #2e86c1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Suggestions Section */
+.suggestions ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+/* Logo and header enhancements */
+.navbar { display: flex; align-items: center; gap: 12px; justify-content: center; }
+.logo { height: 36px; width: auto; display: inline-block; vertical-align: middle; }
+.logo-wrap { display:flex; align-items:center; gap:10px; }
+.brand-title { font-weight: 700; font-size: 20px; color: #fff; }
+
+
+/* small responsive tweak */
+@media (max-width: 576px) {
+.navbar { padding: 12px; }
+.brand-title { font-size: 18px; }
+.logo { height: 30px; }
+}
+/* AUTH PAGE ENHANCEMENTS */
+.auth-card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.auth-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(16,24,40,0.08); }
+
+.form-label { font-weight: 600; color:#25414f; font-size:14px; }
+.primary-btn { box-shadow: 0 8px 18px rgba(46,134,193,0.12); }
+.secondary { border: 1px solid rgba(46,134,193,0.12); color:#2e86c1; }
+
+.muted-link { color: #2e86c1; text-decoration: none; font-weight:600; }
+.muted-link:hover { text-decoration: underline; }
+
+.auth-title { color:#16324a; }
+.auth-sub { color:#506877; }
