@@ -1,1 +1,0 @@
-Implemented a mental health prediction system that interacts with users through a questionnaire to determine their stress level, stores the results, and visualizes historical data using interactive graphs to track stress trends over time. The project uses Python Flask for the backend, HTML and CSS for the frontend, and MySQL for storing user details and prediction history.
